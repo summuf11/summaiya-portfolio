@@ -1,0 +1,770 @@
+/* ChemFlow Project Details Page Stylesheet */
+
+.chemflow-page-wrapper {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1a202c;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.chemflow-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .chemflow-container {
+    padding: 0 16px;
+  }
+}
+
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
+.chemflow-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.chemflow-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.chemflow-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.chemflow-nav-item {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #2d3748;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 8px 0;
+}
+
+.chemflow-nav-item:hover {
+  color: #7059f6;
+}
+
+.chemflow-mobile-btn {
+  display: none;
+  color: #1a202c;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .chemflow-nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .chemflow-nav-links.mobile-open {
+    display: flex;
+  }
+
+  .chemflow-mobile-btn {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Hero Banner & Intro Text
+   ========================================================================== */
+.chemflow-hero-banner-wrap {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.chemflow-banner-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+}
+
+.chemflow-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.chemflow-intro-text {
+  max-width: 1080px;
+}
+
+.chemflow-main-title {
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #1a202c;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.chemflow-tag-subtitle {
+  font-size: clamp(14px, 1.4vw, 17px);
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #7059f6;
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   Metadata Strip
+   ========================================================================== */
+.chemflow-meta-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 36px;
+  margin-bottom: 48px;
+}
+
+.chemflow-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chemflow-meta-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #718096;
+}
+
+.chemflow-meta-val {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+@media (max-width: 640px) {
+  .chemflow-meta-strip {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ==========================================================================
+   Narrative & Text Blocks
+   ========================================================================== */
+.chemflow-narrative-section,
+.chemflow-research-section {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 50px;
+}
+
+.chemflow-text-block {
+  max-width: 1000px;
+}
+
+.chemflow-section-heading {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #7059f6;
+  margin-bottom: 16px;
+}
+
+.chemflow-body-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+.chemflow-body-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Users Section (Primary & Secondary Rows)
+   ========================================================================== */
+.chemflow-users-section {
+  margin: 50px auto;
+}
+
+.chemflow-users-main-heading {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #7059f6;
+  margin-bottom: 32px;
+}
+
+.chemflow-user-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.chemflow-user-row-reverse {
+  grid-template-columns: 1.3fr 1.1fr;
+}
+
+.chemflow-user-subheading {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #7059f6;
+  margin-bottom: 16px;
+}
+
+.chemflow-user-cards-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chemflow-user-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.chemflow-user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.chemflow-user-img-wrap {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.chemflow-user-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.chemflow-user-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chemflow-user-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #7059f6;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.chemflow-user-title {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1a202c;
+  line-height: 1.3;
+}
+
+.chemflow-user-desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #4a5568;
+}
+
+@media (max-width: 900px) {
+  .chemflow-user-row,
+  .chemflow-user-row-reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .chemflow-user-row-reverse .chemflow-user-cards-col {
+    order: 2;
+  }
+
+  .chemflow-user-row-reverse .chemflow-user-text-col {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .chemflow-user-cards-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Key Findings List
+   ========================================================================== */
+.chemflow-findings-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.chemflow-finding-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.chemflow-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2d3748;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Design Process Grid
+   ========================================================================== */
+.chemflow-process-section {
+  margin: 40px auto 50px auto;
+}
+
+.chemflow-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.chemflow-process-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chemflow-process-icon-wrap {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.chemflow-step-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.chemflow-process-card:hover .chemflow-step-icon {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.chemflow-process-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.chemflow-process-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+@media (max-width: 992px) {
+  .chemflow-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chemflow-process-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* ==========================================================================
+   User Flow Card
+   ========================================================================== */
+.chemflow-flow-section {
+  margin: 50px auto;
+}
+
+.chemflow-flow-card {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.chemflow-flow-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Dark Cards (Wireframes & Marketing)
+   ========================================================================== */
+.chemflow-dark-card {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 28px;
+  padding: 56px 40px;
+  margin: 50px 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.chemflow-card-header {
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.chemflow-dark-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.chemflow-dark-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cbd5e0;
+  margin-bottom: 24px;
+}
+
+.chemflow-dark-subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Screens Stack (Wireframes, Marketing, UI)
+   ========================================================================== */
+.chemflow-screens-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.chemflow-screen-frame {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.chemflow-screen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.chemflow-marketing-screen-frame {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   Colors & Typography Section
+   ========================================================================== */
+.chemflow-colors-section {
+  margin: 50px auto;
+}
+
+.chemflow-colors-card {
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(112, 89, 246, 0.15);
+}
+
+.chemflow-colors-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Components Section
+   ========================================================================== */
+.chemflow-components-section {
+  margin: 50px auto;
+}
+
+.chemflow-components-card {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.chemflow-components-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Application Design (Lavender Card)
+   ========================================================================== */
+.chemflow-app-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.chemflow-ui-intro {
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+
+.chemflow-lavender-card {
+  background-color: #f4f2ff;
+  border-radius: 28px;
+  padding: 56px 40px;
+  box-shadow: 0 10px 30px rgba(112, 89, 246, 0.05);
+}
+
+.chemflow-light-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+
+.chemflow-light-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+.chemflow-light-subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #1a202c;
+}
+
+@media (max-width: 768px) {
+  .chemflow-dark-card,
+  .chemflow-lavender-card {
+    padding: 36px 20px;
+    border-radius: 20px;
+  }
+}
+
+/* ==========================================================================
+   Outcome Section
+   ========================================================================== */
+.chemflow-outcome-section {
+  margin: 60px auto 40px auto;
+}
+
+.chemflow-outcome-card {
+  padding: 56px 44px;
+}
+
+.chemflow-outcome-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #7059f6;
+  margin-bottom: 36px;
+}
+
+.chemflow-outcome-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.chemflow-outcome-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chemflow-outcome-heading-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chemflow-outcome-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7059f6;
+  flex-shrink: 0;
+}
+
+.chemflow-outcome-heading {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1a202c;
+}
+
+.chemflow-outcome-desc {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #4a5568;
+  padding-left: 22px;
+}
+
+@media (max-width: 768px) {
+  .chemflow-outcome-card {
+    padding: 36px 20px;
+  }
+
+  .chemflow-outcome-desc {
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Bottom Navigation Buttons
+   ========================================================================== */
+.chemflow-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px auto 72px auto;
+  padding-top: 24px;
+}
+
+.chemflow-btn-pre {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  border: 1.5px solid #7059f6;
+  background-color: transparent;
+  color: #7059f6;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.chemflow-btn-pre:hover {
+  background-color: #f4f2ff;
+  transform: translateX(-3px);
+}
+
+.chemflow-btn-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  background-color: #7059f6;
+  border: 1.5px solid #7059f6;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(112, 89, 246, 0.3);
+}
+
+.chemflow-btn-next:hover {
+  background-color: #5e48e8;
+  border-color: #5e48e8;
+  transform: translateX(3px);
+  box-shadow: 0 6px 20px rgba(112, 89, 246, 0.4);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.chemflow-footer {
+  border-top: 1px solid #edf2f7;
+  padding: 32px 0;
+  background-color: #ffffff;
+}
+
+.chemflow-footer-content {
+  text-align: center;
+  font-size: 14px;
+  color: #718096;
+}

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './Home'
 import BanavoPage from './pages/BanavoPage'
+import ChemflowPage from './pages/ChemflowPage'
 import './App.css'
 
 function ScrollToTop() {
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/banavo-ai" element={<BanavoPage />} />
+        <Route path="/projects/chemflow" element={<ChemflowPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

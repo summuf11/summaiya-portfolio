@@ -222,23 +222,29 @@ export function Home() {
               {/* Project 2: ChemFlow */}
               <article className="project-item reverse">
                 <div className="project-content">
-                  <h3 className="project-title">CHEMFLOW – AI-POWERED DRUG DISCOVERY PLATFORM</h3>
+                  <h3 className="project-title">
+                    <Link to="/projects/chemflow" style={{ color: 'inherit' }}>
+                      CHEMFLOW – AI-POWERED DRUG DISCOVERY PLATFORM
+                    </Link>
+                  </h3>
                   <p className="project-desc">
                     Designed both the ChemFlow web application and marketing website for an AI-driven drug discovery
                     platform. The product helps researchers explore, predict, and optimize drug candidates through
                     predictive modeling, molecular visualization, and an intuitive user experience.
                   </p>
-                  <a href="#work" className="btn-view-work">
+                  <Link to="/projects/chemflow" className="btn-view-work">
                     VIEW WORK <ChevronRight size={16} />
-                  </a>
+                  </Link>
                 </div>
                 <div className="project-image-wrapper">
-                  <img
-                    src={projectChemflow}
-                    alt="ChemFlow Drug Discovery Platform Interface Preview"
-                    className="project-card-img"
-                    loading="lazy"
-                  />
+                  <Link to="/projects/chemflow" aria-label="View ChemFlow project details">
+                    <img
+                      src={projectChemflow}
+                      alt="ChemFlow Drug Discovery Platform Interface Preview"
+                      className="project-card-img"
+                      loading="lazy"
+                    />
+                  </Link>
                 </div>
               </article>
 

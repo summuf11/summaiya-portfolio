@@ -367,8 +367,8 @@ export function BanavoPage() {
           <button
             type="button"
             className="banavo-btn-next"
-            onClick={() => navigate('/#work')}
-            aria-label="Next project"
+            onClick={() => navigate('/projects/chemflow')}
+            aria-label="Next project: ChemFlow"
           >
             NEXT <ArrowRight size={16} />
           </button>
