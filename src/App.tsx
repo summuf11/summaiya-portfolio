@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './Home'
 import BanavoPage from './pages/BanavoPage'
 import ChemflowPage from './pages/ChemflowPage'
+import VidhilikhitPage from './pages/VidhilikhitPage'
 import './App.css'
 
 function ScrollToTop() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/banavo-ai" element={<BanavoPage />} />
         <Route path="/projects/chemflow" element={<ChemflowPage />} />
+        <Route path="/projects/vidhilikhit" element={<VidhilikhitPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

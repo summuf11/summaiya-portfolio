@@ -251,24 +251,30 @@ export function Home() {
               {/* Project 3: Vidhilikhit */}
               <article className="project-item">
                 <div className="project-image-wrapper">
-                  <img
-                    src={projectVidhilikhit}
-                    alt="Vidhilikhit Matrimony Platform Interface Preview"
-                    className="project-card-img"
-                    loading="lazy"
-                  />
+                  <Link to="/projects/vidhilikhit" aria-label="View Vidhilikhit project details">
+                    <img
+                      src={projectVidhilikhit}
+                      alt="Vidhilikhit Matrimony Platform Interface Preview"
+                      className="project-card-img"
+                      loading="lazy"
+                    />
+                  </Link>
                 </div>
                 <div className="project-content">
-                  <h3 className="project-title">VIDHILIKHIT MATRIMONY – COMMUNITY-FOCUSED MATCHMAKING PLATFORM</h3>
+                  <h3 className="project-title">
+                    <Link to="/projects/vidhilikhit" style={{ color: 'inherit' }}>
+                      VIDHILIKHIT MATRIMONY – COMMUNITY-FOCUSED MATCHMAKING PLATFORM
+                    </Link>
+                  </h3>
                   <p className="project-desc">
                     Designed a trusted matrimonial platform for Brahmin and Lingayat families to discover compatible life
                     partners through verified profiles, advanced filters, and secure membership-based access. The
                     experience simplifies the matchmaking journey while preserving the values of trust, privacy, and
                     tradition.
                   </p>
-                  <a href="#work" className="btn-view-work">
+                  <Link to="/projects/vidhilikhit" className="btn-view-work">
                     VIEW WORK <ChevronRight size={16} />
-                  </a>
+                  </Link>
                 </div>
               </article>
 

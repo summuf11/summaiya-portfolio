@@ -500,8 +500,8 @@ export function ChemflowPage() {
           <button
             type="button"
             className="chemflow-btn-next"
-            onClick={() => navigate('/#work')}
-            aria-label="Next project"
+            onClick={() => navigate('/projects/vidhilikhit')}
+            aria-label="Next project: Vidhilikhit"
           >
             NEXT <ArrowRight size={16} />
           </button>
