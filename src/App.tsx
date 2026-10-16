@@ -4,6 +4,7 @@ import Home from './Home'
 import BanavoPage from './pages/BanavoPage'
 import ChemflowPage from './pages/ChemflowPage'
 import VidhilikhitPage from './pages/VidhilikhitPage'
+import BinswiftPage from './pages/BinswiftPage'
 import './App.css'
 
 function ScrollToTop() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/projects/banavo-ai" element={<BanavoPage />} />
         <Route path="/projects/chemflow" element={<ChemflowPage />} />
         <Route path="/projects/vidhilikhit" element={<VidhilikhitPage />} />
+        <Route path="/projects/binswift" element={<BinswiftPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

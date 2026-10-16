@@ -281,23 +281,29 @@ export function Home() {
               {/* Project 4: BinSwift */}
               <article className="project-item reverse">
                 <div className="project-content">
-                  <h3 className="project-title">BINSWIFT — SMART RECYCLING &amp; SCRAP COLLECTION</h3>
+                  <h3 className="project-title">
+                    <Link to="/projects/binswift" style={{ color: 'inherit' }}>
+                      BINSWIFT — SMART RECYCLING &amp; SCRAP COLLECTION
+                    </Link>
+                  </h3>
                   <p className="project-desc">
                     A user-friendly recycling platform featuring Citizen and Agent mobile apps to simplify doorstep scrap
                     pickups, manage collection requests, and track pickup status. Designed with intuitive workflows and
                     Light &amp; Dark themes to deliver a seamless experience for citizens and collection agents.
                   </p>
-                  <a href="#work" className="btn-view-work">
+                  <Link to="/projects/binswift" className="btn-view-work">
                     VIEW WORK <ChevronRight size={16} />
-                  </a>
+                  </Link>
                 </div>
                 <div className="project-image-wrapper">
-                  <img
-                    src={projectBinswitch}
-                    alt="BinSwift Recycling & Scrap Collection Mobile Apps Preview"
-                    className="project-card-img"
-                    loading="lazy"
-                  />
+                  <Link to="/projects/binswift" aria-label="View BinSwift project details">
+                    <img
+                      src={projectBinswitch}
+                      alt="BinSwift Recycling & Scrap Collection Mobile Apps Preview"
+                      className="project-card-img"
+                      loading="lazy"
+                    />
+                  </Link>
                 </div>
               </article>
             </div>

@@ -579,8 +579,8 @@ export function VidhilikhitPage() {
           <button
             type="button"
             className="vidhilikhit-btn-next"
-            onClick={() => navigate('/#work')}
-            aria-label="Next project"
+            onClick={() => navigate('/projects/binswift')}
+            aria-label="Next project: BinSwift"
           >
             NEXT <ArrowRight size={16} />
           </button>
