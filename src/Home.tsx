@@ -14,6 +14,17 @@ import galleryHeadphones from './assets/gallery-headphones.png'
 import galleryFashion from './assets/gallery-fashion.png'
 import galleryMountains from './assets/gallery-mountains.png'
 
+// Running photos list in About Me - easily add more photos here
+const runningPhotos = [
+  { id: 1, src: galleryCharminar, alt: 'Historic illuminated monument at night' },
+  { id: 2, src: galleryDesk, alt: 'Work desk with laptop and stickers' },
+  { id: 3, src: gallerySunset, alt: 'Sunset sky view from rooftop terrace' },
+  { id: 4, src: galleryCity, alt: 'Narrow city architecture street view' },
+  { id: 5, src: galleryHeadphones, alt: 'Wearing silver headphones' },
+  { id: 6, src: galleryFashion, alt: 'Fashion and style aesthetic' },
+  { id: 7, src: galleryMountains, alt: 'Scenic mountain landscape' },
+]
+
 export function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeNav, setActiveNav] = useState('home')
@@ -115,7 +126,7 @@ export function Home() {
             <p className="hero-subtitle">
               Product <span className="highlight-pink">Designer</span> crafting clean &amp; intuitive experiences
             </p>
-            <div>
+            <div className="hero-btn-wrap">
               <a
                 href="#contact"
                 className="btn-primary"
@@ -317,43 +328,37 @@ export function Home() {
             <h2 className="about-me-heading">
               NICE TO MEET YOU, I'M SUMMAIYA. A PRODUCT DESIGNER WITH CLOSE TO 3 YEARS OF EXPERIENCE
             </h2>
+          </div>
 
-            {/* Top 4 Photo Strip */}
-            <div className="gallery-row-1">
-              <div className="gallery-item">
-                <img
-                  src={galleryCharminar}
-                  alt="Historic illuminated monument at night"
-                  className="gallery-img"
-                  loading="lazy"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={galleryDesk}
-                  alt="Work desk with laptop and stickers"
-                  className="gallery-img"
-                  loading="lazy"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={gallerySunset}
-                  alt="Sunset sky view from rooftop terrace"
-                  className="gallery-img"
-                  loading="lazy"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={galleryCity}
-                  alt="Narrow city architecture street view"
-                  className="gallery-img"
-                  loading="lazy"
-                />
-              </div>
+          {/* Running Photos Horizontal Marquee Strip (Full Width) */}
+          <div className="running-photos-container">
+            <div className="running-photos-track">
+              {/* Primary photo list */}
+              {runningPhotos.map((photo, index) => (
+                <div key={`run-1-${photo.id}-${index}`} className="running-photo-card">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="running-photo-img"
+                    loading="eager"
+                  />
+                </div>
+              ))}
+              {/* Duplicate photo list for continuous infinite loop */}
+              {runningPhotos.map((photo, index) => (
+                <div key={`run-2-${photo.id}-${index}`} className="running-photo-card" aria-hidden="true">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="running-photo-img"
+                    loading="eager"
+                  />
+                </div>
+              ))}
             </div>
+          </div>
 
+          <div className="portfolio-container">
             {/* Lower Split: Bio on Left, Mosaic on Right */}
             <div className="about-split">
               <div className="about-text-content">
@@ -400,7 +405,7 @@ export function Home() {
         <footer id="contact" className="footer-section">
           <div className="portfolio-container">
             <h2 className="footer-title">
-              <span className="serif-italic">Get</span> in Touch.
+              <span className="footer-get">Get</span> in Touch.
             </h2>
             <p className="footer-subtitle">So that we can talk more about...</p>
 
@@ -440,20 +445,6 @@ export function Home() {
               >
                 <svg className="social-icon-svg" viewBox="0 0 24 24">
                   <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.163 11.025c-.237-.023-2.652-.257-5.184.778-.135-.306-.279-.613-.432-.919 3.011-1.393 4.225-3.086 4.316-3.218 1.029 1.002 1.583 2.115 1.3 3.359zm-2.476-4.697c-.126.155-1.353 1.62-4.186 2.946-1.344-2.463-2.839-4.57-3.003-4.798 1.83-.585 3.829-.441 5.496.486-.307 1.366 1.693 1.366 1.693 1.366zm-9.083-3.774c.164.225 1.678 2.347 3.024 4.823-3.906 1.155-7.464 1.144-7.79 1.143 1.077-2.673 2.99-4.839 4.766-5.966zm-7.986 7.446c.35.002 3.526-.007 7.275-1.077.245.503.475 1.011.688 1.523-4.707 1.488-8.887 4.908-9.043 5.039-1.045-1.542-1.229-3.499-.548-5.485.494-.001 1.628 0 1.628 0zm3.327 7.027c.189-.148 3.844-3.056 8.358-4.484 1.15 2.981 1.62 5.564 1.706 6.096-2.583 1.802-5.834 2.164-8.887 1.196-1.177-.808-1.177-2.808-1.177-2.808zm11.397.987c-.104-.619-.571-2.993-1.664-5.852 2.327-1.048 4.34-.863 4.545-.841-.301 2.825-1.351 5.253-2.881 6.693z" />
-                </svg>
-              </a>
-
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-                className="social-btn"
-                aria-label="LinkedIn Profile"
-                title="LinkedIn"
-              >
-                <svg className="social-icon-svg" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
             </div>
