@@ -353,7 +353,6 @@
 
 .banavo-card-header {
   margin-bottom: 40px;
-  max-width: 900px;
 }
 
 .banavo-dark-title {
@@ -417,8 +416,8 @@
 }
 
 .banavo-light-subtitle {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: #1a202c;
@@ -435,7 +434,6 @@
 
 .banavo-screen-frame {
   width: 100%;
-  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }

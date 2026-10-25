@@ -485,61 +485,6 @@ export function VidhilikhitPage() {
                   loading="lazy"
                 />
               </div>
-
-              {/* Dashboards Section */}
-              <div className="vidhilikhit-dashboards-header">
-                <h3 className="vidhilikhit-dashboards-title">DASHBOARDS</h3>
-              </div>
-
-              {/* Screen 2: Dashboard Overview */}
-              <div className="vidhilikhit-screen-wrapper">
-                <img
-                  src={dashOverviewImg}
-                  alt="Vidhilikhit Matrimony - Admin Dashboard Overview UI"
-                  className="vidhilikhit-screen-img"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Screen 3: Dashboard Payments */}
-              <div className="vidhilikhit-screen-wrapper">
-                <img
-                  src={dashPaymentsImg}
-                  alt="Vidhilikhit Matrimony - Pending Payment Requests Dashboard UI"
-                  className="vidhilikhit-screen-img"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Screen 4: Dashboard Profiles */}
-              <div className="vidhilikhit-screen-wrapper">
-                <img
-                  src={dashProfilesImg}
-                  alt="Vidhilikhit Matrimony - All Profiles Directory UI"
-                  className="vidhilikhit-screen-img"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Screen 5: Dashboard Tokens */}
-              <div className="vidhilikhit-screen-wrapper">
-                <img
-                  src={dashTokensImg}
-                  alt="Vidhilikhit Matrimony - Generate & Assign Subscription Tokens UI"
-                  className="vidhilikhit-screen-img"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Screen 6: Mobile Mockups */}
-              <div className="vidhilikhit-screen-wrapper">
-                <img
-                  src={mobileMockupsImg}
-                  alt="Vidhilikhit Matrimony - Mobile Responsive Experience Mockups"
-                  className="vidhilikhit-screen-img"
-                  loading="lazy"
-                />
-              </div>
             </div>
           </div>
         </section>

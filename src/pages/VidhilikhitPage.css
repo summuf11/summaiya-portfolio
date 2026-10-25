@@ -520,7 +520,6 @@
 .vidhilikhit-flow-wrapper,
 .vidhilikhit-colors-wrapper {
   width: 100%;
-  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -536,7 +535,6 @@
    ========================================================================== */
 .vidhilikhit-dark-container {
   background-color: #000000;
-  border-radius: 28px;
   padding: 60px 48px;
   color: #ffffff;
   display: flex;
@@ -546,7 +544,7 @@
 }
 
 .vidhilikhit-dark-header {
-  max-width: 900px;
+  /* max-width: 900px; */
 }
 
 .vidhilikhit-dark-title {

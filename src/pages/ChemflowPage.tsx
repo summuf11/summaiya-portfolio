@@ -140,7 +140,7 @@ export function ChemflowPage() {
           </div>
 
           <div className="chemflow-intro-text">
-            <h1 className="chemflow-main-title">ChemFlow — AI-Powered Drug Discovery Platform</h1>
+            <h1 className="chemflow-main-title " style={{marginBottom: "45px"}}>ChemFlow — AI-Powered Drug Discovery Platform</h1>
             <h2 className="chemflow-tag-subtitle">AI-POWERED DRUG DISCOVERY PLATFORM</h2>
             <p className="chemflow-body-text">
               ChemFlow is an AI-powered drug discovery platform that helps researchers explore, predict, and optimize
