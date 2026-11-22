@@ -14,11 +14,6 @@ import step6 from '../assets/vidhilikhit-step-6.png'
 import userFlowImg from '../assets/vidhilikhit-user-flow.png'
 import colorsTypographyImg from '../assets/vidhilikhit-colors-typography.png'
 import landingFullImg from '../assets/vidhilikhit-landing-full.png'
-import dashOverviewImg from '../assets/vidhilikhit-dash-overview.png'
-import dashPaymentsImg from '../assets/vidhilikhit-dash-payments.png'
-import dashProfilesImg from '../assets/vidhilikhit-dash-profiles.png'
-import dashTokensImg from '../assets/vidhilikhit-dash-tokens.png'
-import mobileMockupsImg from '../assets/vidhilikhit-mobile-mockups.png'
 import './VidhilikhitPage.css'
 
 export function VidhilikhitPage() {

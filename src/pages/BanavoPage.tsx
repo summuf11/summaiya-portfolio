@@ -10,7 +10,6 @@ import step4 from "../assets/banavo-step-4.png";
 import step5 from "../assets/banavo-step-5.png";
 import wfLoyal from "../assets/banavo-wf-loyal.png";
 import wfRfm from "../assets/banavo-wf-rfm.png";
-import wfGrid from "../assets/banavo-wf-grid.png";
 import wfgrid1 from "../assets/banavo-wf-rfm-1.png";
 import wfgrid2 from "../assets/banavo-wf-rfm-2.png";
 import wfgrid3 from "../assets/banavo-wf-rfm-3.png";
