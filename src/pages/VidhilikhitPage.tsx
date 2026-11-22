@@ -14,6 +14,11 @@ import step6 from '../assets/vidhilikhit-step-6.png'
 import userFlowImg from '../assets/vidhilikhit-user-flow.png'
 import colorsTypographyImg from '../assets/vidhilikhit-colors-typography.png'
 import landingFullImg from '../assets/vidhilikhit-landing-full.png'
+import vidhilikhitdashboard1 from '../assets/vidhilikhit-dashboard-1.png'
+import vidhilikhitdashboard2 from '../assets/vidhilikhit-dashboard-2.png'
+import vidhilikhitdashboard3 from '../assets/vidhilikhit-dashboard-3.png'
+import vidhilikhitdashboard4 from '../assets/vidhilikhit-dashboard-4.png'
+import vidhilikhitmobiles from '../assets/vidhilikhit-mobiles.png'
 import './VidhilikhitPage.css'
 
 export function VidhilikhitPage() {
@@ -479,6 +484,51 @@ export function VidhilikhitPage() {
                   className="vidhilikhit-screen-img"
                   loading="lazy"
                 />
+              </div>
+              <div>
+                <div style={{ fontWeight: 'bold', fontSize: '30px' }}>DASHBOARDS</div>
+              </div>
+              <div className="vidhilikhit-dashboard-grid">
+                <div className="vidhilikhit-dashboard-card">
+                  <img
+                    src={vidhilikhitdashboard1}
+                    alt="Vidhilikhit Matrimony - Dashboard Screen 1"
+                    className="vidhilikhit-dashboard-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="vidhilikhit-dashboard-card">
+                  <img
+                    src={vidhilikhitdashboard2}
+                    alt="Vidhilikhit Matrimony - Dashboard Screen 2"
+                    className="vidhilikhit-dashboard-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="vidhilikhit-dashboard-card">
+                  <img
+                    src={vidhilikhitdashboard3}
+                    alt="Vidhilikhit Matrimony - Dashboard Screen 3"
+                    className="vidhilikhit-dashboard-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="vidhilikhit-dashboard-card">
+                  <img
+                    src={vidhilikhitdashboard4}
+                    alt="Vidhilikhit Matrimony - Dashboard Screen 4"
+                    className="vidhilikhit-dashboard-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="vidhilikhit-dashboard-card">
+                  <img
+                    src={vidhilikhitmobiles}
+                    alt="Vidhilikhit Matrimony - Dashboard Screen 4"
+                    className="vidhilikhit-dashboard-img"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>

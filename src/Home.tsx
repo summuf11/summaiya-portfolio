@@ -412,7 +412,7 @@ export function Home() {
             <div className="social-links">
               {/* Email */}
               <a
-                href="mailto:summaiyafatima@example.com"
+                href="mailto:summaiyafatima854@gmail.com"
                 className="social-btn"
                 aria-label="Send an email"
                 title="Email"

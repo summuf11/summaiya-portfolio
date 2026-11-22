@@ -435,13 +435,13 @@ export function ChemflowPage() {
 
         {/* ==================== Application Design (Final UI) ==================== */}
         <section className="chemflow-container chemflow-app-section">
-          <div className="chemflow-ui-intro">
+          {/* <div className="chemflow-ui-intro">
             <h3 className="chemflow-section-heading">APPLICATION DESIGN</h3>
             <p className="chemflow-body-text">
               The application was designed to help researchers navigate complex workflows and analyze compounds and
               proteins efficiently.
             </p>
-          </div>
+          </div> */}
 
           <div className="chemflow-lavender-card chemflow-ui-card">
             <div className="chemflow-card-header">

@@ -461,7 +461,7 @@
 
 .running-photo-card {
   width: 320px;
-  height: 230px;
+  /* height: 230px; */
   flex-shrink: 0;
   border-radius: 20px;
   overflow: hidden;

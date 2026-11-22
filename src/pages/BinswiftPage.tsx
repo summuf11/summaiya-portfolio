@@ -318,6 +318,7 @@ export function BinswiftPage() {
               <h3 className="binswift-dark-subtitle">SCREENS</h3>
             </div>
 
+
             <div className="binswift-showcase-frame">
               <img
                 src={binswiftWfShowcase}

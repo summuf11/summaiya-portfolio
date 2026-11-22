@@ -152,7 +152,6 @@
 
 .binswift-hero-banner-wrap {
   width: 100%;
-  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   margin-bottom: 48px;
@@ -172,8 +171,8 @@
 }
 
 .binswift-main-title {
-  font-size: clamp(32px, 3.8vw, 48px);
-  font-weight: 800;
+  font-size: clamp(32px, 3.8vw, 40px);
+  font-weight: 600;
   letter-spacing: -0.5px;
   color: #111827;
   line-height: 1.2;
@@ -193,7 +192,6 @@
   font-size: 16px;
   line-height: 1.75;
   color: #374151;
-  max-width: 1100px;
 }
 
 /* ==========================================================================
@@ -244,7 +242,7 @@
 .binswift-split-grid {
   display: grid;
   grid-template-columns: 1.05fr 1.15fr;
-  align-items: center;
+  /* align-items: center; */
   gap: 48px;
 }
 
@@ -273,13 +271,13 @@
 }
 
 .binswift-text-desc {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.7;
   color: #374151;
 }
 
 .binswift-feature-tags {
-  font-size: 13.5px;
+  font-size: 20px;
   color: #6b7280;
   line-height: 1.6;
 }
@@ -393,7 +391,6 @@
    ========================================================================== */
 .binswift-dark-container {
   background-color: #000000;
-  border-radius: 28px;
   padding: 56px 44px 44px 44px;
   color: #ffffff;
   margin: 32px 0 64px 0;
@@ -431,7 +428,6 @@
 
 .binswift-showcase-frame {
   width: 100%;
-  border-radius: 16px;
   overflow: hidden;
 }
 

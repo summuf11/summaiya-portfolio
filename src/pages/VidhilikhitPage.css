@@ -10,7 +10,6 @@
 
 .vidhilikhit-container {
   width: 100%;
-  max-width: 1240px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -163,7 +162,7 @@
 .vidhilikhit-meta-strip {
   background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  padding: 36px 0;
+  padding: 36px 35px;
 }
 
 .vidhilikhit-meta-grid {
@@ -203,7 +202,7 @@
    Generic Section & Headings
    ========================================================================== */
 .vidhilikhit-section {
-  padding: 64px 0;
+  padding: 64px 35px;
 }
 
 .vidhilikhit-subheading {
@@ -547,6 +546,10 @@
   /* max-width: 900px; */
 }
 
+.vidhilikhit-dashboard-card{
+  margin-bottom: 40px;
+}
+
 .vidhilikhit-dark-title {
   font-size: clamp(26px, 3vw, 36px);
   font-weight: 800;
@@ -577,7 +580,6 @@
 
 .vidhilikhit-screen-wrapper {
   width: 100%;
-  border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   background-color: #111827;
